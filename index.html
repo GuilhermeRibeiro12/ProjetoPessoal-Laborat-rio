@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GuiLab Diagnosticos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topo">
+    <nav class="menu" aria-label="Menu principal">
+      <a class="marca" href="#inicio" aria-label="GuiLab Diagnosticos">
+        <span class="marca-icone">GL</span>
+        <span>GuiLab Diagnosticos</span>
+      </a>
+
+      <button class="menu-botao" type="button" aria-label="Abrir menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="menu-links">
+        <a href="#exames">Exames</a>
+        <a href="#tutores">Tutores</a>
+        <a href="#veterinarios">Veterinarios</a>
+        <a href="#resultados">Resultados</a>
+        <a href="#contato">Contato</a>
+
+        <a
+class="botao-login"
+href="login.html">
+
+Login
+
+</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-conteudo">
+        <p class="etiqueta">Laboratorio veterinario de exames</p>
+        <h1>Diagnostico preciso para cuidar melhor de cada paciente.</h1>
+        <p class="hero-texto">
+          Exames laboratoriais veterinarios com atendimento claro para tutores,
+          suporte tecnico para clinicas e resultados organizados.
+        </p>
+        <div class="hero-acoes">
+          <a class="botao primario" href="#contato">Solicitar atendimento</a>
+          <a class="botao secundario" href="#exames">Ver exames</a>
+        </div>
+      </div>
+
+      <div class="hero-painel" aria-label="Resumo do laboratorio">
+        <div>
+          <strong>24h</strong>
+          <span>para exames de rotina</span>
+        </div>
+        <div>
+          <strong>+40</strong>
+          <span>tipos de exames</span>
+        </div>
+        <div>
+          <strong>Online</strong>
+          <span>envio de resultados</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao resultados" id="resultados">
+
+  <div class="secao-cabecalho">
+    <p class="etiqueta">Resultados Online</p>
+    <h2>Acompanhe o resultado do exame</h2>
+    <p>Digite o código recebido para consultar o andamento.</p>
+  </div>
+
+  <form class="formulario" id="form-resultados">
+
+    <label>
+      Código do exame
+      <input
+        type="text"
+        id="codigo"
+        placeholder="Ex: GL2026001"
+        required
+      >
+    </label>
+
+    <button class="botao primario">
+      Consultar
+    </button>
+
+  </form>
+
+  <div class="painel-resultado" id="resultado">
+    <p>Nenhuma consulta realizada.</p>
+  </div>
+
+</section>
+
+    <section class="faixa-info" aria-label="Diferenciais">
+      <article>
+        <h2>Coleta orientada</h2>
+        <p>Instrucoes simples para preparar o animal antes da coleta.</p>
+      </article>
+      <article>
+        <h2>Equipe especializada</h2>
+        <p>Rotina pensada para clinicas, hospitais e tutores.</p>
+      </article>
+      <article>
+        <h2>Laudos organizados</h2>
+        <p>Resultados enviados com clareza e rastreabilidade.</p>
+      </article>
+    </section>
+
+    <section class="secao" id="exames">
+      <div class="secao-cabecalho">
+        <p class="etiqueta">Servicos</p>
+        <h2>Exames oferecidos</h2>
+        <p>Uma base inicial para apresentar os principais exames do laboratorio.</p>
+      </div>
+
+      <div class="grade-exames">
+        <article class="card-exame">
+          <h3>Hemograma completo</h3>
+          <p>Avaliacao das celulas sanguineas para triagem, acompanhamento e investigacao clinica.</p>
+        </article>
+        <article class="card-exame">
+          <h3>Bioquimica sanguinea</h3>
+          <p>Analise de funcoes hepaticas, renais, pancreaticas e metabolicas.</p>
+        </article>
+        <article class="card-exame">
+          <h3>Urinalise</h3>
+          <p>Exame fisico, quimico e sedimentoscopico da urina.</p>
+        </article>
+        <article class="card-exame">
+          <h3>Parasitologico</h3>
+          <p>Pesquisa de parasitas intestinais em amostras fecais.</p>
+        </article>
+        <article class="card-exame">
+          <h3>Citologia</h3>
+          <p>Apoio diagnostico para lesoes cutaneas, nodulos e secrecoes.</p>
+        </article>
+        <article class="card-exame">
+          <h3>Testes rapidos</h3>
+          <p>Triagem para doencas infecciosas conforme especie e indicacao clinica.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="secao duas-colunas" id="tutores">
+      <div>
+        <p class="etiqueta">Para tutores</p>
+        <h2>Como preparar seu animal</h2>
+        <p>
+          Algumas coletas exigem jejum, recipiente especifico ou horario indicado.
+          Fale com a equipe antes de levar seu pet ao laboratorio.
+        </p>
+      </div>
+      <ul class="lista-check">
+        <li>Confirme se o exame precisa de jejum.</li>
+        <li>Leve pedido veterinario, se houver.</li>
+        <li>Evite medicar o animal sem orientacao.</li>
+        <li>Para urina e fezes, use frasco limpo e bem fechado.</li>
+      </ul>
+    </section>
+
+    <section class="secao veterinarios" id="veterinarios">
+      <div class="secao-cabecalho">
+        <p class="etiqueta">Para veterinarios</p>
+        <h2>Suporte para clinicas parceiras</h2>
+        <p>Organize o envio de amostras e acompanhe resultados com mais facilidade.</p>
+      </div>
+
+      <div class="linha-processo">
+        <article>
+          <span>1</span>
+          <h3>Cadastro</h3>
+          <p>Clinica parceira informa dados de contato e responsavel tecnico.</p>
+        </article>
+        <article>
+          <span>2</span>
+          <h3>Envio</h3>
+          <p>Amostras sao identificadas e encaminhadas conforme orientacao.</p>
+        </article>
+        <article>
+          <span>3</span>
+          <h3>Resultado</h3>
+          <p>Laudos sao disponibilizados por canal combinado com a clinica.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="secao contato" id="contato">
+      <div>
+        <p class="etiqueta">Contato</p>
+        <h2>Fale com o GuiLab</h2>
+        <p>
+          Use este formulario como modelo. Em uma versao futura, ele pode ser
+          conectado a WhatsApp, e-mail ou banco de dados.
+        </p>
+
+        <div class="dados-contato">
+          <p><strong>WhatsApp:</strong> (11) 91481-7472</p>
+          <p><strong>E-mail:</strong> guilhermeriberio200620@gmail.com</p>
+          <p><strong>Endereco:</strong> Rua Nossa Senhora das Merçês , 407 - SP</p>
+          <p><strong>Horario:</strong> Segunda a Sexta, 9h as 18h</p>
+        </div>
+      </div>
+
+      <form class="formulario" id="formulario-contato">
+        <label>
+          Nome
+          <input type="text" name="nome" placeholder="Seu nome" required>
+        </label>
+        <label>
+          E-mail
+          <input type="email" name="email" placeholder="voce@email.com" required>
+        </label>
+        <label>
+          Assunto
+          <select name="assunto" required>
+            <option value="">Selecione</option>
+            <option>Informacoes sobre exames</option>
+            <option>Agendamento de coleta</option>
+            <option>Parceria com clinica</option>
+          </select>
+        </label>
+        <label>
+          Mensagem
+          <textarea name="mensagem" rows="4" placeholder="Como podemos ajudar?" required></textarea>
+        </label>
+        <button class="botao primario" type="submit">Enviar mensagem</button>
+        <p class="mensagem-form" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p>GuiLab Diagnosticos - Site academico desenvolvido em HTML, CSS e JavaScript.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,5 +1,9 @@
 # 🐾 GuiLab Diagnósticos
 
+## 📷 Demonstração
+
+![Página Inicial](assets/home.png)
+
 Sistema web desenvolvido para simular um laboratório veterinário, permitindo o acesso de diferentes perfis de usuários e a consulta de resultados de exames.
 
 ## 📖 Sobre o projeto
